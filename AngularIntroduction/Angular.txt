@@ -1,0 +1,37 @@
+- ¿Qué es angular? 
+
+Angular es un framework de desarrollo web creado por Google.
+Se usa para crear aplicaciones web dinámicas y de una sola página (SPA - Single Page Applications).
+Está basado en TypeScript, que es un superconjunto de JavaScript.
+
+- Angular Architecture (Arquitectura de Angular)
+
+Aquí estudias cómo está construido Angular por dentro.
+
+Componentes principales:
+
+- Componentes: las piezas básicas de una interfaz.
+- Módulos: agrupan componentes y servicios.
+- Servicios: lógica de negocio reutilizable, se usa con inyección de dependencias.
+- Directivas: manipulan el DOM (como *ngIf, *ngFor).
+- Routing: permite navegar entre páginas sin recargar la web.
+
+
+Setting up a New Project (Configurar un nuevo proyecto)
+
+- Instalar Node.js y Angular CLI:
+
+npm install -g @angular/cli
+
+- Crear un nuevo proyecto:
+
+ng new nombre-proyecto
+
+- Entrar a la carpeta del proyecto:
+
+cd nombre-proyecto
+
+- Ejecutar el servidor:
+
+ng serve
+
