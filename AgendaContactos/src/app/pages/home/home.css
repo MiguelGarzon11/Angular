@@ -1,0 +1,45 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+	text-align: left;
+	background: var(--background-color);
+	padding: 8rem;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    height: auto;
+    margin: 2rem;
+}
+
+form label {
+    display: block;
+    padding: 1rem;
+    font-size: 20px;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    border: var(--text-color);
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+.boton {
+    margin-top: 2em;
+    width: 60%;
+    font-size: 1.5em;
+    padding: 0.7em 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

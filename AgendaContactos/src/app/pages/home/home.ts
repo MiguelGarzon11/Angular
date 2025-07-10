@@ -29,7 +29,7 @@ export class Home {
       // Agregar el contacto a la lista
       this.contactos.push({ ...this.contacto });
       // Limpiar el formulario
-      this.contacto = { name: '', phone: 0, email: '' };
+      this.contacto = { name: '', phone: null, email: '' };
 
     }
   }

@@ -1,15 +1,15 @@
 <div>
-     <form>
+     <form class="formulario">
         <label for="name">Name:
             <input type="text" id="name" [(ngModel)]="contacto.name" name="name" placeholder="Ingresa el nombre" required>
         </label>
         <label for="phone">Phone:
-               <input type="tel" id="phone" value="" [(ngModel)]="contacto.phone" name="phone" placeholder="Ingresa el teléfono" required>
+               <input type="tel" id="phone" [(ngModel)]="contacto.phone" name="phone" placeholder="Ingresa el teléfono" required>
         </label>
         <label for="email">Email:
             <input type="email" id="email" [(ngModel)]="contacto.email" name="email" placeholder="Ingresa el email" required>
          </label>
-         <button type="submit" (click)="guardarContacto()">Guardar Contacto</button>
+         <button type="submit" class="boton" (click)="guardarContacto()">Guardar Contacto</button>
          <br>
          <ul>
             <li *ngFor="let contacto of contactos">
