@@ -12,7 +12,7 @@
          <button type="submit" class="boton" (click)="guardarContacto()">Guardar Contacto</button>
          <br>
          <ul>
-            <li *ngFor="let contacto of contactos">
+            <li class="bg-amber-50 py-0.5" *ngFor="let contacto of contactos">
               {{ contacto.name }} - {{ contacto.phone }} - {{ contacto.email }}
             </li>
             <li *ngIf="contactos.length === 0">No hay contactos guardados.</li>
