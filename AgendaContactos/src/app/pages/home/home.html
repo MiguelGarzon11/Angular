@@ -1,21 +1,24 @@
-<div>
-     <form class="formulario">
-        <label for="name">Name:
-            <input type="text" id="name" [(ngModel)]="contacto.name" name="name" placeholder="Ingresa el nombre" required>
-        </label>
-        <label for="phone">Phone:
-               <input type="tel" id="phone" [(ngModel)]="contacto.phone" name="phone" placeholder="Ingresa el teléfono" required>
-        </label>
-        <label for="email">Email:
-            <input type="email" id="email" [(ngModel)]="contacto.email" name="email" placeholder="Ingresa el email" required>
-         </label>
-         <button type="submit" class="boton" (click)="guardarContacto()">Guardar Contacto</button>
-         <br>
-         <ul>
-            <li class="bg-amber-50 py-0.5" *ngFor="let contacto of contactos">
-              {{ contacto.name }} - {{ contacto.phone }} - {{ contacto.email }}
-            </li>
-            <li *ngIf="contactos.length === 0">No hay contactos guardados.</li>
-         </ul>
-     </form>
-</div>
+
+  <div class="bg-neutral-500 text-black min-h-screen flex flex-col items-center justify-center">
+      <form class="bg-stone-300/30 rounded-xl mt-8 mb-78 px-50 py-20 flex flex-col text-3xl font-serif justify-center items-center shadow-2xl min-w-2xl max-w-3xl">
+          <label class="flex flex-col font-bold mb-2" for="name">Name:
+              <input class="font-light border-1 border-stone-800 rounded-xl m-2 p-2 bg-stone-100 w-full" type="text" id="name" [(ngModel)]="contacto.name" name="name" placeholder="Ingresa el nombre" required>
+          </label>
+          <label class="flex flex-col font-bold" for="phone">Phone:
+                <input class="font-light border-1 border-stone-800 rounded-xl m-2 p-2 bg-stone-100 w-full" type="tel" id="phone" [(ngModel)]="contacto.phone" name="phone" placeholder="Ingresa el teléfono" required>
+          </label>
+          <label class="flex flex-col font-bold" for="email">Email:
+              <input class="font-light border-1 border-stone-800 rounded-xl m-2 p-2 bg-stone-100 w-full" type="email" id="email" [(ngModel)]="contacto.email" name="email" placeholder="Ingresa el email" required>
+          </label>
+          <button class="bg-neutral-800 py-2 text-white cursor-pointer mt-10 rounded-2xl min-w-lg max-w-xl hover:bg-stone-500 transition-all duration-300 ease-in-out hover:scale-105"
+
+          type="submit" (click)="guardarContacto()">Guardar Contacto</button>
+          <br>
+          <ul class="text-white text-2xl text-wrap m-0">
+              <li *ngFor="let contacto of contactos">
+                {{ contacto.name }} - {{ contacto.phone }} - {{ contacto.email }}
+              </li>
+              <li *ngIf="contactos.length === 0">No hay contactos guardados.</li>
+          </ul>
+      </form> 
+  </div>
